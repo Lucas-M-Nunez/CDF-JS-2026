@@ -101,57 +101,57 @@
 
 // 10. Usa funciones para simular una calculadora básica
 
-let num1 = parseInt(prompt("Ingrese el Primer Numero: ",)); 
-let num2 = parseInt(prompt("Ingrese el Segundo Numero: ", ));
-let resultado = 0;
-let operador = prompt(` Seleccione: 
-    +  Sumar
-    -  Restar
-    *  Multiplicar
-    /  dividir
+// let num1 = parseInt(prompt("Ingrese el Primer Numero: ",)); 
+// let num2 = parseInt(prompt("Ingrese el Segundo Numero: ", ));
+// let resultado = 0;
+// let operador = prompt(` Seleccione: 
+//     +  Sumar
+//     -  Restar
+//     *  Multiplicar
+//     /  dividir
 
-    Ingrese un operador: `,);
+//     Ingrese un operador: `,);
 
-console.log("Primer numero: "+num1);
-console.log("Segundo numero: "+num2);
+// console.log("Primer numero: "+num1);
+// console.log("Segundo numero: "+num2);
 
-const Suma = (num1, num2) => {
-    return num1 + num2;
-}
+// const Suma = (num1, num2) => {
+//     return num1 + num2;
+// }
 
-const Resta = (num1, num2) => {
-    return num1 - num2;
-}
+// const Resta = (num1, num2) => {
+//     return num1 - num2;
+// }
 
-const Mult = (num1, num2) => {
-    return num1 * num2;
-}
+// const Mult = (num1, num2) => {
+//     return num1 * num2;
+// }
 
-const Div = (num1, num2) => {
-    return num1 / num2;
-}
+// const Div = (num1, num2) => {
+//     return num1 / num2;
+// }
 
-console.log("Operador: "+operador);
+// console.log("Operador: "+operador);
 
 
-switch (operador) {
-    case '+':
-        resultado = Suma(num1,num2);
-        console.log(`Resultado de la Suma: ${resultado}`);
-        break;
-    case '-':
-        resultado = Resta(num1,num2);
-        console.log(`Resultado de la Resta: ${resultado}`);
-        break;
-    case '*':
-        resultado = Mult(num1,num2);
-        console.log(`Resultado de la Multiplicacion: ${resultado}`);
-        break;
-    case '/':
-        resultado = Div(num1,num2);
-        console.log(`Resultado de la Division: ${resultado}`);
-        break;
-    default:
-        console.log("operador no valido");
-        break;
-}
+// switch (operador) {
+//     case '+':
+//         resultado = Suma(num1,num2);
+//         console.log(`Resultado de la Suma: ${resultado}`);
+//         break;
+//     case '-':
+//         resultado = Resta(num1,num2);
+//         console.log(`Resultado de la Resta: ${resultado}`);
+//         break;
+//     case '*':
+//         resultado = Mult(num1,num2);
+//         console.log(`Resultado de la Multiplicacion: ${resultado}`);
+//         break;
+//     case '/':
+//         resultado = Div(num1,num2);
+//         console.log(`Resultado de la Division: ${resultado}`);
+//         break;
+//     default:
+//         console.log("operador no valido");
+//         break;
+// }
