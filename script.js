@@ -199,10 +199,10 @@
 
 //Funciones: 
 
-let nombre = 'lucas';
+// let nombre = 'lucas';
 
-function saludar(nombre) {
-    return 'hola '+ nombre
-}
-let saludo = saludar(nombre);
-console.log(saludo);
+// function saludar(nombre) {
+//     return 'hola '+ nombre
+// }
+// let saludo = saludar(nombre);
+// console.log(saludo);
