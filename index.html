@@ -1,66 +1,49 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
     <title>Taller de Javascript</title>
-</head>
-<body>
-    <h1>Hola desde HTML en el taller de Javascript</h1>
+  </head>
+  <body>
+    <form class="formulario" id="formulario" action="">
+      <h1>Contacto</h1>
+      <div class="contenedor1">
+        <input
+          type="text"
+          placeholder="Nombre y apellido"
+          id="nombre"
+          name="nombre"
+        />
+      </div>
 
-
-    <button onclick="calcular()" id="btnclick" alt="boton click">click</button>
-    <br>
-    <br>
-    <button type="submit">Enviar</button>
-    <br>
-    <br>
-    <button type="reset">reiniciar</button>
-    <br>
-    <br>
-    <button disabled="disabled">Deshabilitado</button>
-    <br>
-    <br>
-    <button type="button">Botón</button>
-    <br>
-    <br>
-    <input class="item" type="text">
-    <br>
-    <br>
-    Nombre y apellido <input type="text" placeholder="nombre">
-    <input class="item" type="button" value="Enviar">
-    <br>
-    <br>
-    <input class="item" type="button" value="Reiniciar">
-    <br>
-    <br>
-    <input class="item" type="checkbox" name="lista" id="">
-    <br>
-    <br>
-    <input type="date" name="" id="">
-    <br>
-    <br>
-
-
-    <ul>
-        <li>rojo</li>
-        <li>amarillo</li>
-        <li>naranja</li>
-        <li>azul</li>
-    </ul>
-
-    <ol class="">
-        <li>primero</li>
-        <li>segundo</li>
-        <li>tercero</li>
-        <li>cuarto</li>
-    </ol>
-
+      <div class="contenedor2">
+        <input
+          type="text"
+          placeholder="Apellido"
+          id="apellido"
+          name="apellido"
+        />
+      </div>
+      <div class="contenedor3">
+        <input
+          type="email"
+          placeholder="Correo Electrónico"
+          id="email"
+          name="email"
+        />
+      </div>
+      <div class="buttons">
+          <button type="button" id="resetBtn">Resetear</button>
+          <button type="submit" id="enviar">Enviar</button>
+      </div>
+    </form>
 
     <script src="scripts/script.js"></script>
     <script src="scripts/segundaclase.js"></script>
     <script src="scripts/Funciones.js"></script>
     <script src="scripts/tercerclase.js"></script>
-</body>
+    <script src="scripts/manipulacionDom.js"></script>
+  </body>
 </html>

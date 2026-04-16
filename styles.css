@@ -1,7 +1,75 @@
-#btnclick{
-    background-color: #4CAF50;
-    color: white;
-    padding: 15px 32px;
-    border: none;
-    border-radius: 10px;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #ffffff
+}
+
+.formulario {
+  background: #ffffff;
+  padding: 40px;
+  border-radius: 15px;
+  width: 320px;
+  border: 1px solid #030303;
+  text-align: center;
+}
+
+.formulario h1 {
+  margin-bottom: 20px;
+  color: #333;
+  text-align: start;
+}
+
+.formulario div {
+  margin-bottom: 15px;
+}
+
+.formulario input {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  outline: none;
+  transition: 0.3s;
+}
+
+.formulario .buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.formulario button {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  background: #2a5298;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.formulario .resetBtn{
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  background: #2a5298;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.formulario button:hover {
+  background: #1e3c72;
 }
