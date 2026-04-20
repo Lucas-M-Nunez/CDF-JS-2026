@@ -8,7 +8,7 @@
   </head>
   <body>
     <form class="formulario" id="formulario" action="">
-      <h1>Contacto</h1>
+      <h1 id="title-formulario">Contacto</h1>
       <div class="contenedor1">
         <input
           type="text"
@@ -17,7 +17,6 @@
           name="nombre"
         />
       </div>
-
       <div class="contenedor2">
         <input
           type="text"
@@ -34,16 +33,40 @@
           name="email"
         />
       </div>
+      <div class="contenerdor5">
+        <input
+          name="mensaje"
+          id="mensaje"
+          type="text"
+          placeholder="Escribe tu mensaje aquí..."
+        ></input>
+      </div>
       <div class="buttons">
-          <button type="button" id="resetBtn">Resetear</button>
-          <button type="submit" id="enviar">Enviar</button>
+        <button type="button" id="resetBtn">Resetear</button>
+        <button type="submit" id="enviar">Enviar</button>
       </div>
     </form>
 
+    <div class="contenedor4" id="div-contenedor4">
+      <h2 class="titulo-contenedor4">Titulo</h2>
+      <div class="parrafos">
+        <p class="parrafo">Parrafo 1</p>
+        <p class="parrafo">parrafo 2</p>
+        <p class="parrafo">parrafo 3</p>
+        <p class="parrafo4">parrafo 4</p>
+        <button type="button" class="btnparrafo" id="btnparrafo">
+          Ocultar Párrafo
+        </button>
+        <button type="button" class="btnparrafo" id="btnClickeame">
+          ¡Clickeame!
+        </button>
+      </div>
+    </div>
     <script src="scripts/script.js"></script>
     <script src="scripts/segundaclase.js"></script>
     <script src="scripts/Funciones.js"></script>
     <script src="scripts/tercerclase.js"></script>
     <script src="scripts/manipulacionDom.js"></script>
+    <script src="scripts/manipulacionDomDos.js"></script>
   </body>
 </html>
