@@ -53,22 +53,22 @@ document.querySelector('.titulo-contenedor4').classList.add('clase-nueva');
 document.querySelector('.titulo-contenedor4').classList.remove('clase-nueva');
 // 6 - Cambia el contenido HTML de un div usando innerHTML.
 
-//document.getElementById('div-contenedor4').innerHTML = '<h2>Nuevo Titulo</h2> <br> <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. </p>';
+document.getElementById('div-contenedor4').innerHTML = '<h2>Nuevo Titulo</h2> <br> <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. </p>';
 
 // 7 - Muestra en la consola el texto de un párrafo seleccionado.
 
-// const contenidoParrafo = document.querySelector('.parrafo');
+ const contenidoParrafo = document.querySelector('.parrafo');
 
-// console.log(contenidoParrafo.textContent);
+ console.log(contenidoParrafo.textContent);
 
 // 8 - Usa querySelectorAll para seleccionar múltiples elementos y recorrerlos con un bucle.
 
-// const parrafosGrupo = document.querySelectorAll(".parrafos");
+const parrafosGrupo = document.querySelectorAll(".parrafos");
 
-// for (let i = 0; i < parrafosGrupo.length; i++) {
-//   const element = parrafosGrupo[i];
-//   console.log(element);
-// }
+for (let i = 0; i < parrafosGrupo.length; i++) {
+  const element = parrafosGrupo[i];
+  console.log(element);
+}
 
 // 9 - Crea un botón que, al hacer clic, oculte un párrafo.
 
