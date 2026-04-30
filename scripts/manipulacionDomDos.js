@@ -26,41 +26,84 @@ btnClick.addEventListener("click", () => {
 
 // 4 - Muestra un mensaje de error si un campo de texto está vacío al enviar un formulario.
 
-const inputsForm = document.querySelectorAll("div input");
 const form = document.getElementById("formulario");
+const inputsForm = document.querySelectorAll("#formulario input");
 
 form.addEventListener("submit", (e) => {
-    inputsForm.forEach((input) => {
-        e.preventDefault();
+  let camposVacios = [];
+
+  inputsForm.forEach((input) => {
     if (input.value.trim() === "") {
-        console.log(input.value);
-        alert(`Falta completar el campo '${input.name}'`);
+      camposVacios.push(input.name);
+      input.style.border = "2px solid red";
     } else {
-        alert('Formulario Enviado');
+      input.style.border = "2px solid green";
     }
   });
+
+  if (camposVacios.length > 0) {
+    e.preventDefault();
+    alert("Hay campos vacios: "+ camposVacios.join(' - '));
+  }
 });
 
-// form.addEventListener("submit", (e) => {
-//   let hayError = false;
-
-//   inputsForm.forEach((input) => {
-//     if (input.value.trim() === "") {
-//       hayError = true;
-//     }
-//   });
-
-//   if (hayError) {
-//     e.preventDefault(); // ❗ evita el envío
-//     alert("Hay campos vacíos");
-//   } else {
-//     alert("Formulario enviado correctamente");
-//   }
-// });
-
 // 5 - Cambia la posición de un elemento cuando se pase el ratón sobre él.
+
+const btn = document.getElementById('btnClickeame');
+
+btn.addEventListener('mouseover', () => {
+  btn.style.position = 'absolute';
+  btn.style.top = `${Math.random() * 500}px`;
+  btn.style.left = `${Math.random() * 500}px`;
+});
+
 // 6 - Detecta y muestra en la consola la tecla presionada por el usuario.
+
+const telcaPresionada = document.getElementById('nombre');
+
+telcaPresionada.addEventListener('keyup', (input) => {
+  console.log('tecla: '+input.key);
+})
 // 7 - Implementa un botón que oculte o muestre un elemento al hacer clic (toggle).
+const btnToggle = document.getElementById('btn');
+const formulario = document.getElementById('formulario');
+
+let toggle = false;
+
+btnToggle.addEventListener('click', () => {
+  if (toggle === true) {
+    formulario.style.display = 'none';
+    toggle = false; // 🔥 actualizar estado
+  } else {
+    formulario.style.display = 'block';
+    toggle = true; // 🔥 actualizar estado
+  }
+});
 // 8 - Crea un campo de selección (dropdown) que actualice un párrafo con la opción seleccionada.
+
+const select = document.getElementById('select');
+const parrafo = document.getElementById('parrafo');
+select.addEventListener('change', () => {
+  parrafo.textContent = `Opción seleccionada: ${select.value}`;
+});
+
 // 9 - Implementa un formulario con validación para correos electrónicos.
+
+const formEmail = document.getElementById('formulario');
+formEmail.addEventListener('submit', (e) => {
+  const emailInput = document.getElementById('email');
+  const emailValue = emailInput.value.trim();
+  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+  if (!emailRegex.test(emailValue)) {
+    e.preventDefault();
+    alert('Por favor, introduce un correo electrónico válido.');
+  }
+});
+
 // 10 - Haz un evento que cambie el texto de un botón al hacer clic en él.
+
+const btnCambiarTexto = document.getElementById('resetBtn');
+btnCambiarTexto.addEventListener('click', () => {
+  btnCambiarTexto.textContent = '¡No funciona el reset, vuelva pronto!';
+});
