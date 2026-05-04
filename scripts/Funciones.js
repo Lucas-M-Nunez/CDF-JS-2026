@@ -1,3 +1,6 @@
+// FUNCIONES EN JS ----------------------------------------------------------
+// ----------------- PRACTICO NUMERO 2 ---------------------------------------------
+
 // 1. Declara una función que calcule el área de un triángulo.
 
 // function areaTriangulo(base, altura) {
